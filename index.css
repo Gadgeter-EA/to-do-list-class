@@ -1,0 +1,153 @@
+:root {
+  --backgroundColor: #161623;
+  --primaryColor: #25273C;
+  --secondaryColor: #c3c3df;
+  --white: #FFFFFF;
+  --primaryFont: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 1rem;
+
+  font-family: var(--primaryFont);
+  font-size: 1.6rem;
+
+  background-color: var(--backgroundColor);
+  color: var(--white);
+}
+
+header {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--primaryColor);
+}
+
+header svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+h1 {
+  font-weight: 700;
+
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+
+.search-bar {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--primaryColor);
+}
+
+.search-bar svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.search-bar input {
+  flex: 1;
+
+  padding-bottom: 0.25rem;
+
+  font-size: 1.6rem;
+  font-family: var(--primaryFont);
+
+  border: none;
+  border-bottom: 0.1rem solid var(--white);
+  color: var(--secondaryColor);
+  background-color: transparent;
+  outline: none;
+}
+
+.todo-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 2rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--primaryColor);
+  list-style: none;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+
+  padding: 2rem;
+
+  border-bottom: solid 0.1rem var(--secondaryColor);
+}
+
+.todo:last-of-type {
+  border: none;
+}
+
+.todo.todo--completed {
+  text-decoration: line-through;
+  color: var(--secondaryColor);
+}
+
+.todo span {
+  font-size: 1.45rem;
+}
+
+.todo button {
+  color: var(--secondaryColor);
+  background-color: transparent;
+  border: none;
+}
+
+.todo-list-controls {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.5rem 1rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--primaryColor);
+}
+
+.todo-list-controls span {
+  font-size: 1.3rem;
+  color: var(--secondaryColor);
+}
+
+.todo-list-controls span:last-child:hover {
+  color: var(--white);
+}
