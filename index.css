@@ -89,6 +89,7 @@ h1 {
 
 .todo-list {
   width: 100%;
+  max-height: calc(100vh - 2rem - 5.8rem - 2rem - 6rem - 2rem - 2rem - 5rem);
 
   display: flex;
   flex-direction: column;
@@ -98,6 +99,8 @@ h1 {
   border-radius: 0.5rem;
   background-color: var(--primaryColor);
   list-style: none;
+
+  overflow-y: auto;
 }
 
 .todo {
