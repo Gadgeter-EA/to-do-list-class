@@ -26,7 +26,7 @@
   </header>
 
   <main>
-    <form class="search-bar">
+    <form class="search-bar" id="addTodoForm">
       <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
@@ -37,7 +37,7 @@
     </form>
 
     <ul class="todo-list">
-      <li class="todo todo--completed">
+      <!-- <li class="todo todo--completed">
         <input type="checkbox" checked>
 
         <span>Completar el curso de HTML</span>
@@ -49,126 +49,14 @@
             <path d="M6 6l12 12"></path>
          </svg>
         </button>
-      </li>
-
-      <li class="todo">
-        <input type="checkbox">
-
-        <span>Terminar la base de datos</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
-
-      <li class="todo">
-        <input type="checkbox">
-
-        <span>Programar la interfaz</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
-
-      <li class="todo todo--completed">
-        <input type="checkbox" checked>
-
-        <span>Completar el curso de HTML</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
-
-      <li class="todo">
-        <input type="checkbox">
-
-        <span>Terminar la base de datos</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
-
-      <li class="todo">
-        <input type="checkbox">
-
-        <span>Programar la interfaz</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
-
-      <li class="todo todo--completed">
-        <input type="checkbox" checked>
-
-        <span>Completar el curso de HTML</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
-
-      <li class="todo">
-        <input type="checkbox">
-
-        <span>Terminar la base de datos</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
-
-      <li class="todo">
-        <input type="checkbox">
-
-        <span>Programar la interfaz</span>
-
-        <button>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M18 6l-12 12"></path>
-            <path d="M6 6l12 12"></path>
-         </svg>
-        </button>
-      </li>
+      </li> -->
     </ul>
   </main>
 
   <footer class="todo-list-controls">
-    <span>1/3 TODOs</span>
+    <span id="totalTodos">1/3 TODOs</span>
 
-    <span>Borrar completados</span>
+    <span id="deleteCompletedTodos">Borrar completados</span>
   </footer>
 
   <script src="./index.js"></script>
